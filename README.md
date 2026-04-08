@@ -42,9 +42,11 @@ terraform apply
 ### 4. Configure Environment Variables
 Once Terraform finishes, it will output several values (like Bootstrap Servers, API Keys, etc.).
 1. Locate the `.env.example` file.
-2. Rename it to `.env`.
-3. Plug the **Terraform outputs** into the corresponding fields in the `.env` file.
-4. Add the **Resource Management API Key and Secret** you generated in Step 1 to this file as well.
+2. Rename it to `.env`. If it doesn't exist, create a new .env file and use this file to help you populate it: https://github.com/confluentinc/mcp-confluent/blob/main/.env.example
+3. Plug the **Terraform outputs** into the corresponding fields in the `.env` file. Please note that this script does not create Tableflow API Keys: this is out of scope for this demo, so you can remove from the .env file.
+5. Add the **Resource Management API Key and Secret** you generated in Step 1 to this file as well.
+
+
 
 ### 5. MCP Server Setup
 With your infrastructure live and your `.env` file configured, you can now set up the MCP server to interface with LLMs (like Claude).
