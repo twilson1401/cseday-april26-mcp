@@ -1,6 +1,0 @@
-# Rename this file to terraform.tfvars and fill in your values
-
-confluent_cloud_api_key = ""
-confluent_cloud_api_secret = ""
-
-
