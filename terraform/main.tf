@@ -113,7 +113,7 @@ resource "confluent_api_key" "sr_api_key" {
 
 data "confluent_flink_region" "example" {
   cloud   = "AWS"
-  region  = "us-east-1"
+  region  = "us-east-2"
 }
 
 output "example" {
